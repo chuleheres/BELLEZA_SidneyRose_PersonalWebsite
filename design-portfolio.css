@@ -1,0 +1,102 @@
+
+a:hover{
+	background-color:pink;
+	padding:5px;
+	color:black;
+}
+a:active{
+	background-color:maroon;
+}
+
+#masthead {
+	margin: 0 auto;
+	margin-top: 20px;
+	width: 800px;
+	color: #fff;
+}
+
+#nav {
+	background-color:#0099cc;
+	margin-right:20px;
+	font-size: 1.4em;
+	padding:10px;
+}
+
+#nav li {
+	display: inline;
+	margin: 0 0 0 20px;
+}
+
+#nav li a {
+	color: black;
+	text-decoration: none;
+	font-family:arial bold;
+}
+
+
+#wrap {
+	
+	margin: 0 auto;
+	padding: 10px;
+	width: 780px;
+	background: #fff;
+	border: 10px solid #003366;
+	margin-top:20px;
+}
+#logo {
+	margin-top: 20px;
+	margin-left:250px;
+} 
+#header h1 {
+	font-size: 2em;
+	margin: 10px 0 0 0;
+	padding: 10px;
+	text-align: center;
+	background-color:#c0c0c0;
+}
+#header img{
+	margin-left:10px;
+}
+
+#content, #sidebar {
+	width: 360px;
+	margin: 20px 0 20px 0;
+	padding: 10px;
+	
+}
+
+#content {
+	float: right;
+	color:black;
+	margin-top:60px;
+	background: #eee;
+	text-align:justify;
+}
+#content p{
+	text-indent:40px
+}
+
+#content h2 {
+	font-size: 2.4em;
+	background:#c0c0c0;
+	padding:10px;
+}
+
+#sidebar {
+	margin-top:60px;
+	float: left;
+	background: #eee;
+}
+
+#sidebar h2 {
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	margin: 0 0 20px 0;
+	padding: 5px;
+}
+
+#port li {
+	margin: 0 10px 20px 0;
+	float: left;
+	border: 5px solid #ddd;
+}
