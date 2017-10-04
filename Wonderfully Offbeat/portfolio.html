@@ -1,9 +1,82 @@
 <html>
-<link rel="stylesheet" type="text/css" href="design-portfolio.css" />
-<body
-background="back.jpg";
-<div style="margin:auto;width:900px;">
-<div style="float:left;width:900px;height:574px;margin:20px 0px;background:#f6f6f1;border:3px solid #40c1a0;">
+<head>
+<title>Wonderfully Offbeat</title>
+</head>
+<link rel="stylesheet" type="text/css" href="design-index.css" />
+<body style="background-color:#f2dcdf;"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="whole.css">
+<link rel="stylesheet" href="font.css">
+<link rel="stylesheet" href="scroll.css">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/*Scrolling effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('back.gif');
+    min-height: 100%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="index.html" class="w3-bar-item w3-button">HOME</a>
+    <a href="about me.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">PORT</span>FOLIO</span>
+  </div>
+</div>
+
+<div style="margin:auto;width:900;">
+<div style="float:left;width:894px;height:574px;margin:20px 0px;background:#f6f6f1;border:3px solid #f2dcdf;">
 <div style="float:left;width:900px;height:59px;">
 <div style="width:900px;float:left;height:574px;background:#f6f6f6;">
 <div style="width:190px;float:left;height:574px;background:#5e73b4;">
@@ -20,20 +93,21 @@ background="back.jpg";
 </div>
 
 <div style="width:190px;float:left;margin:60px 0px 0px 0px;">
-<p style="font:8px/100% verdana;font-weight:bold;color:#f6f6f6;padding:10px 0px 10px 0px;margin:0px 30px 0px 30px;text-align:left;letter-spacing:1px;text-transform:uppercase;border-bottom:solid 1px #7088d1;"><a href="http://url" rel="nofollow" style="color:#f6f6f6;">aff profile</a></p>
+<p style="font:8px/100% verdana;font-weight:bold;color:#f6f6f6;padding:10px 0px 10px 0px;margin:0px 30px 0px 30px;text-align:left;letter-spacing:1px;text-transform:uppercase;border-bottom:solid 1px #7088d1;"><a target="_blank" href="https://www.upwork.com/o/profiles/users/_~01349334fa058b730c/" rel="nofollow" style="color:#f6f6f6;">upwork profile</a></p>
 
-<p style="font:8px/100% verdana;font-weight:bold;color:#f6f6f6;padding:10px 0px 10px 0px;margin:0px 30px 0px 30px;text-align:left;letter-spacing:1px;text-transform:uppercase;border-bottom:solid 1px #7088d1;"><a href="http://url" rel="nofollow" style="color:#f6f6f6;">graphic shop</a></p>
+<p style="font:8px/100% verdana;font-weight:bold;color:#f6f6f6;padding:10px 0px 10px 0px;margin:0px 30px 0px 30px;text-align:left;letter-spacing:1px;text-transform:uppercase;border-bottom:solid 1px #7088d1;"><a target="_blank" href="http://www.asianfanfics.com/story/view/727226/layout-shop-layout-shoplayout-profilelayout-storylayout" rel="nofollow" style="color:#f6f6f6;">Graphic Shop</a></p>
 
-<p style="font:8px/100% verdana;font-weight:bold;color:#f6f6f6;padding:10px 0px 10px 0px;margin:0px 30px 0px 30px;text-align:left;letter-spacing:1px;text-transform:uppercase;border-bottom:solid 1px #7088d1;"><a href="http://url" rel="nofollow" style="color:#f6f6f6;">tumblr</a></p>
+<p style="font:8px/100% verdana;font-weight:bold;color:#f6f6f6;padding:10px 0px 10px 0px;margin:0px 30px 0px 30px;text-align:left;letter-spacing:1px;text-transform:uppercase;border-bottom:solid 1px #7088d1;"><a target="_blank" href="http://www.facebook.com/simyakinyang" rel="nofollow" style="color:#f6f6f6;">Facebook</a></p>
 
-<p style="font:8px/100% verdana;font-weight:bold;color:#f6f6f6;padding:10px 0px 10px 0px;margin:0px 30px 0px 30px;text-align:left;letter-spacing:1px;text-transform:uppercase;border-bottom:solid 1px #7088d1;"><a href="http://url" rel="nofollow" style="color:#f6f6f6;">instagram</a></p>
+<p style="font:8px/100% verdana;font-weight:bold;color:#f6f6f6;padding:10px 0px 10px 0px;margin:0px 30px 0px 30px;text-align:left;letter-spacing:1px;text-transform:uppercase;border-bottom:solid 1px #7088d1;"><a target="_blank" href="http://www.kroro.tumblr.com" rel="nofollow" style="color:#f6f6f6;">Tumblr</a></p>
 
-<p style="font:8px/100% verdana;font-weight:bold;color:#f6f6f6;padding:10px 0px 10px 0px;margin:0px 30px 0px 30px;text-align:left;letter-spacing:1px;text-transform:uppercase;border-bottom:solid 1px #7088d1;"><a href="http://url" rel="nofollow" style="color:#f6f6f6;">twitter</a></p>
+<p style="font:8px/100% verdana;font-weight:bold;color:#f6f6f6;padding:10px 0px 10px 0px;margin:0px 30px 0px 30px;text-align:left;letter-spacing:1px;text-transform:uppercase;border-bottom:solid 1px #7088d1;"><a target="_blank" href="http://www.twitter.com/chuleheres" rel="nofollow" style="color:#f6f6f6;">Twitter</a></p>
 
 <p style="font:8px/120% verdana;font-weight:bold;color:#8698d2;padding:10px 0px 10px 0px;margin:0px 30px 0px 30px;text-align:left;letter-spacing:1px;">Questions? Don&#39;t<br />
 hesitate to send<br />
 me a PM!</p>
 </div>
+
 
 <div style="width:190px;float:left;height:4px;margin:13px 0px 0px;">
 <div style="width:26px;margin:38px auto;height:4px;">
@@ -55,7 +129,7 @@ me a PM!</p>
 </div>
 
 <div style="width:120px;float:left;height:18px;border-radius:20px;border:solid 1px #5e73b4;margin:1px 0px 0px -20px;">
-<p style="font:7px/100% verdana;font-weight:bold;color:#5e73b4;margin:5px 0px 0px 10px;text-align:center;letter-spacing:.5px;"><a href="home.html" rel="nofollow" style="color:#5e73b4;">Back </a></p>
+<p style="font:7px/100% verdana;font-weight:bold;color:#5e73b4;margin:5px 0px 0px 10px;text-align:center;letter-spacing:.5px;"><a href="portfolio.html" rel="nofollow" style="color:#5e73b4;">Hello </a></p>
 </div>
 </div>
 </div>
@@ -72,16 +146,16 @@ me a PM!</p>
 <div style="width:319px;float:left;background:#5e73b4;margin:90px 0px 0px 48px;border-radius:10px;">
 <p style="font:8px/100% verdana;font-weight:bold;color:#f6f6f6;padding:11px 0px 10px 0px;margin:0px 10px 0px 10px;text-align:left;letter-spacing:1px;text-transform:uppercase;border-bottom:solid 1px #7088d1;">meet the designer!</p>
 
-<p style="font:8px/120% verdana;color:#f6f6f6;margin:10px 10px 10px 10px;text-align:left;letter-spacing:1px;">Hello :D <br />
+<p style="font:8px/120% verdana;color:#f6f6f6;margin:10px 10px 10px 10px;text-align:left;letter-spacing:1px;">
+Hello there. My name is Sidney. Been blowing birthday candles since the 24th of November, 1997. Born outside the country and raised in the Philippines. A 17 year old dreamer. Currently taking up Bachelor of Science in Computer Science. Smiling is probably the best skill I can be proud of myself. I express my thoughts and feelings through words and I enjoy doing so. I love reading, sleeping, eating, and all things weird. Someday, I wish to have a name of my own. I am not a layout artist, but I've always wanted to be one! I don't really know what I want to do in life, though. I love being lazy and nasty, despite the fact that I can never see myself as a juvenile. I also love baking & cooking. It is one of the things I love to do the most. It is my passion and it comes second to everything I want to do. I have no talent at all, but I am always ready to discover new things. :) I hope you follow and support me as I enter the blogging world. This is my escape. I will share my thoughts and reviews about science, kpop trends, tips and ideas, showcase my photography skills, and the like. I hope you enjoy visiting my site. Thank you! :) 
 <br />
-Sed ne facete platonem disputando. Menandri intellegat abhorreant an quo. Vel impetus scripserit an, eu sale aliquip deserunt per. Stet lorem mel te. Mea ut tale mazim. Quot movet aliquam sit an, mei minim tantas iracundia ut, per graeco concludaturque eu.<br />
 <br />
-Maecenas sodales mi lacus, quis imperdiet tortor congue vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</p>
 </div>
 
 <div style="width:319px;float:left;margin:20px 0px 0px 48px;">
 <div style="width:149px;float:left;height:210px;background:#fff;margin:0px 0px 0px 0px;border-radius:10px;">
-<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="http://i.imgur.com/oCWcA1w.png" style="width:200px;height:356px;" /></div>
+<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="p1.png" style="width:200px;height:356px; onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains" /></div>
 
 <div style="width:149px;float:left;">
 <div style="width:35px;float:left;height:15px;background:#5e73b4;border-radius:20px;margin:-160px 0px 0px -10px;">
@@ -91,7 +165,7 @@ Maecenas sodales mi lacus, quis imperdiet tortor congue vitae. Lorem ipsum dolor
 </div>
 
 <div style="width:149px;float:left;height:210px;background:#fff;margin:0px 0px 0px 20px;border-radius:10px;">
-<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="http://i.imgur.com/oCWcA1w.png" style="width:200px;height:356px;" /></div>
+<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="p2.png" style="width:200px;height:356px;onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains" /></div>
 
 <div style="width:149px;float:left;">
 <div style="width:35px;float:left;height:15px;background:#5e73b4;border-radius:20px;margin:-160px 0px 0px -10px;">
@@ -103,7 +177,7 @@ Maecenas sodales mi lacus, quis imperdiet tortor congue vitae. Lorem ipsum dolor
 
 <div style="width:319px;float:left;margin:20px 0px 0px 48px;">
 <div style="width:149px;float:left;height:210px;background:#fff;margin:0px 0px 0px 0px;border-radius:10px;">
-<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="http://i.imgur.com/oCWcA1w.png" style="width:200px;height:356px;" /></div>
+<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="p3.png" style="width:200px;height:356px;onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains" /></div>
 
 <div style="width:149px;float:left;">
 <div style="width:35px;float:left;height:15px;background:#5e73b4;border-radius:20px;margin:-160px 0px 0px -10px;">
@@ -113,7 +187,7 @@ Maecenas sodales mi lacus, quis imperdiet tortor congue vitae. Lorem ipsum dolor
 </div>
 
 <div style="width:149px;float:left;height:210px;background:#fff;margin:0px 0px 0px 20px;border-radius:10px;">
-<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="http://i.imgur.com/oCWcA1w.png" style="width:200px;height:356px;" /></div>
+<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="p4.png" style="width:200px;height:356px;onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains" /></div>
 
 <div style="width:149px;float:left;">
 <div style="width:35px;float:left;height:15px;background:#5e73b4;border-radius:20px;margin:-160px 0px 0px -10px;">
@@ -125,17 +199,17 @@ Maecenas sodales mi lacus, quis imperdiet tortor congue vitae. Lorem ipsum dolor
 
 <div style="width:319px;float:left;margin:20px 0px 0px 48px;">
 <div style="width:149px;float:left;height:210px;background:#fff;margin:0px 0px 0px 0px;border-radius:10px;">
-<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="http://i.imgur.com/oCWcA1w.png" style="width:200px;height:356px;" /></div>
+<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="p5.jpg" style="width:200px;height:356px;onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains" /></div>
 
 <div style="width:149px;float:left;">
 <div style="width:35px;float:left;height:15px;background:#5e73b4;border-radius:20px;margin:-160px 0px 0px -10px;">
-<p style="font:7px/100% verdana;font-weight:bold;color:#f6f6f6;margin:4px 0px 0px 3px;text-align:center;letter-spacing:2px;text-transform:uppercase;">05</p>
+<p style="font:7px/100% verdana;font-weight:bold;color:#f6f6f6;margin:4px 0px 0px 3px;text-align:center;letter-spacing:2px;text-transform:uppercase;onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">05</p>
 </div>
 </div>
 </div>
 
 <div style="width:149px;float:left;height:210px;background:#fff;margin:0px 0px 0px 20px;border-radius:10px;">
-<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="http://i.imgur.com/oCWcA1w.png" style="width:200px;height:356px;" /></div>
+<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="p6.png" style="width:200px;height:356px;onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains" /></div>
 
 <div style="width:149px;float:left;">
 <div style="width:35px;float:left;height:15px;background:#5e73b4;border-radius:20px;margin:-160px 0px 0px -10px;">
@@ -147,7 +221,7 @@ Maecenas sodales mi lacus, quis imperdiet tortor congue vitae. Lorem ipsum dolor
 
 <div style="width:319px;float:left;margin:20px 0px 0px 48px;">
 <div style="width:149px;float:left;height:210px;background:#fff;margin:0px 0px 0px 0px;border-radius:10px;">
-<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="http://i.imgur.com/oCWcA1w.png" style="width:200px;height:356px;" /></div>
+<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="p7.png" style="width:200px;height:356px;onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains" /></div>
 
 <div style="width:149px;float:left;">
 <div style="width:35px;float:left;height:15px;background:#5e73b4;border-radius:20px;margin:-160px 0px 0px -10px;">
@@ -157,7 +231,7 @@ Maecenas sodales mi lacus, quis imperdiet tortor congue vitae. Lorem ipsum dolor
 </div>
 
 <div style="width:149px;float:left;height:210px;background:#fff;margin:0px 0px 0px 20px;border-radius:10px;">
-<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="http://i.imgur.com/oCWcA1w.png" style="width:200px;height:356px;" /></div>
+<div style="width:149px;float:left;height:180px;overflow:hidden;border-radius:10px;"><img alt="" src="p8.gif" style="width:200px;height:356px;onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains" /></div>
 
 <div style="width:149px;float:left;">
 <div style="width:35px;float:left;height:15px;background:#5e73b4;border-radius:20px;margin:-160px 0px 0px -10px;">
@@ -165,6 +239,7 @@ Maecenas sodales mi lacus, quis imperdiet tortor congue vitae. Lorem ipsum dolor
 </div>
 </div>
 </div>
+
 </div>
 </div>
 </div>
@@ -232,7 +307,7 @@ Maecenas sodales mi lacus, quis imperdiet tortor congue vitae. Lorem ipsum dolor
 </div>
 
 <div style="width:27px;float:left;">
-<p style="font:8px/100% calibri;color:#5e73b4;margin:5.5px 5px 0px 0px;text-align:right;font-weight:bold;text-transform:uppercase;letter-spacing:1px;">5</p>
+<p style="font:8px/100% calibri;color:#5e73b4;margin:5.5px 5px 0px 0px;text-align:right;font-weight:bold;text-transform:uppercase;letter-spacing:1px;"></p>
 </div>
 </div>
 </div>
@@ -240,11 +315,7 @@ Maecenas sodales mi lacus, quis imperdiet tortor congue vitae. Lorem ipsum dolor
 <div style="width:260px;float:left;background:#5e73b4;margin:20px 0px 0px 0px;border-radius:10px;">
 <p style="font:8px/100% verdana;font-weight:bold;color:#f6f6f6;padding:11px 0px 10px 0px;margin:0px 10px 0px 10px;text-align:left;letter-spacing:1px;text-transform:uppercase;border-bottom:solid 1px #7088d1;">rules to request!</p>
 
-<p style="font:8px/120% verdana;color:#f6f6f6;margin:10px 10px 10px 10px;text-align:left;letter-spacing:1px;">Lorem ipsum dolor sit amet, ius enim facilisi menandri no. Vim ut illud quodsi omittantur, eu meliore deserunt duo. His ad fugit dicat, eum dicta solet patrioque in, sit dolore feugiat eleifend ex.<br />
-<br />
-Sed ne facete platonem disputando. Menandri intellegat abhorreant an quo. Vel impetus scripserit an, eu sale aliquip deserunt per. Stet lorem mel te. Mea ut tale mazim. Quot movet aliquam sit an, mei minim tantas iracundia ut, per graeco concludaturque eu.<br />
-<br />
-Maecenas sodales mi lacus, quis imperdiet tortor congue vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p style="font:8px/120% verdana;color:#f6f6f6;margin:10px 10px 10px 10px;text-align:left;letter-spacing:1px;">In requesting layouts and graphics,just send me the proper details of your project thru my upwork account and I'll discuss all the matters in our conversation.</p>
 </div>
 </div>
 </div>
